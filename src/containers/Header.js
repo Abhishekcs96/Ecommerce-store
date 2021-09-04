@@ -6,7 +6,7 @@ const Header = () => {
       <div className="ui container centre">
         <div class="content">
           <div class="header">
-            <h2>Shop</h2>
+            <h2 style={{color: "white"}}>Shop</h2>
           </div>
         </div>
       </div>

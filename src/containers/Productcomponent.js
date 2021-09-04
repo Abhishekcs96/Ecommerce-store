@@ -5,12 +5,12 @@ import { Card } from "semantic-ui-react";
 
 const Productcomponent = () => {
   const products = useSelector((state) => state.allProducts.products); 
-
+console.log(products)
   const renderlist = products.map((product) => {
     const { id, title, image, price, category } = product;
     return (
-      <>
-        <div className="four wide column" key={id}>
+      
+        <div className="four wide column" >
           <Link to={`product/${id}`}>
             <Card.Group>
               <Card centered="true">
@@ -25,10 +25,11 @@ const Productcomponent = () => {
             </Card.Group>
           </Link>
         </div>
-      </>
+      
     );
   });
-  return <> {renderlist} </>;
+  return <> {renderlist} 
+  {console.log(renderlist)}</>;
 };
 
 export default Productcomponent;
