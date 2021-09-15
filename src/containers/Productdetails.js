@@ -24,12 +24,12 @@ const Productdetails = () => {
        if(productID && productID !== "") fetchdetail()
     },[productID]);
   return(
-    <div className="ui grid container">
+    <div className="ui grid container" id='item-grid'>
     {Object.keys(product).length === 0 ? (
       <div>...Loading</div>
     ) : (
-      <div className="ui placeholder segment">
-        <div className="ui two column stackable center aligned grid">
+      <div className="ui placeholder segment" id="item-one">
+        <div className="ui two column stackable center aligned grid" >
           <div className="ui vertical divider"></div>
           <div className="middle aligned row">
             <div className="column lp">

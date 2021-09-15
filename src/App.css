@@ -1,5 +1,25 @@
-.ui.grid.container {
+.App{
+    background-image: linear-gradient(120deg, #56c4b2 20%, #c5a1a9 70%);
+    background-repeat: no-repeat;
+}
+.ui.stackable.grid.container {
     margin-top: 45px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    margin-top: 4%;
+    text-align: center;
+}
+#nav{
+    background-image: linear-gradient(120deg, #5c3a44 20%, #8d5864 70%);
+    background-repeat: no-repeat;
+    border-radius: 0px;
+}
+.header-title{
+    color: #fff;
+    text-align: center;
 }
 
 .ui.cards > .card > .content > .header {
@@ -13,6 +33,61 @@
     height: 50vh;
     max-width: 100%;
     width: auto;
+}
+#card-header{
+    font-size: 14px;
+    overflow: hidden;
+}
+
+@media screen and (min-width:320px) and (max-width:580px) {
+    .images-container{
+        transform: scale(0.75);
+    }
+    #card-header{
+        font-size: 14px;
+        overflow: hidden;
+    }
+    #item-one{
+        transform: scale(0.89);
+        margin-top: auto;
+        margin-bottom: auto;
+        overflow-y: hidden;
+    }
+  
+}
+
+@media screen and (min-width:581px) and (max-width:768px) {
+   .images-container{
+       transform: scale(0.75);
+   }
+   #card-header{
+    font-size: 15px;
+    overflow: hidden;
+}
+#item-one{
+    height: 70vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    overflow-y: hidden;
+}
+.ui.grid{
+    height: 100vh;
+}
+}
+
+@media screen and (min-width:1024px) {
+    #item-grid{
+        height: 100vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #item-one{
+        height: 50vh;
+        margin-top: auto;
+        margin-bottom: auto;
+        overflow-y: hidden;
+    }
 }
 
 
