@@ -29,7 +29,7 @@ const Productdetails = () => {
       <div>...Loading</div>
     ) : (
       <div className="ui placeholder segment" id="item-one">
-        <div className="ui two column stackable center aligned grid" >
+        <div className="ui two column stackable center aligned grid" id='grid-style' >
           <div className="ui vertical divider"></div>
           <div className="middle aligned row">
             <div className="column lp">
