@@ -1,3 +1,7 @@
+This project uses ReactJS and Redux for state management. 
+Front-end only and uses axios library to fetch api calls from a test api (fake-shop api). 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
